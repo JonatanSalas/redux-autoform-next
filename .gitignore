@@ -6,3 +6,4 @@
 .idea/modules.xml
 .idea/redux-autoform-next.iml
 .idea/workspace.xml
+node_modules
