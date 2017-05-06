@@ -1,0 +1,11 @@
+{
+  "name": "redux-autoform-core",
+  "version": "1.0.0",
+  "description": "create forms out of metadata",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Redux Autoform",
+  "license": "MIT"
+}

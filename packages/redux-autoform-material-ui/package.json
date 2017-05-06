@@ -1,0 +1,11 @@
+{
+  "name": "redux-autoform-material-ui",
+  "version": "1.0.0",
+  "description": "material-ui components for redux-autoform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Redux Autoform",
+  "license": "MIT"
+}
