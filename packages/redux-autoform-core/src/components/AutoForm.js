@@ -6,8 +6,8 @@ import LayoutProvider from '../layout/provider';
 
 import Form from './Form';
 
-@reduxForm()
-export default class AutoForm extends Component {
+
+class AutoForm extends Component {
     static propTypes = {
         componentFactory: PropTypes.func,
         layout: PropTypes.object,
@@ -74,3 +74,5 @@ export default class AutoForm extends Component {
         }
     }
 }
+
+export default reduxForm()(AutoForm);

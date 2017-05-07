@@ -2,3 +2,6 @@
 /packages/redux-autoform-material/node_modules/
 /packages/redux-autoform-bootstrap/node_modules/
 /packages/redux-autoform-core/node_modules/
+/packages/redux-autoform-material/dist/
+/packages/redux-autoform-bootstrap/dist/
+/packages/redux-autoform-core/dist/

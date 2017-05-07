@@ -1,3 +1,1 @@
-/**
- * Created by jonatansalas on 6/5/17.
- */
+export AutoForm from './components/AutoForm';

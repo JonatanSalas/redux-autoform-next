@@ -2,8 +2,11 @@
   "name": "redux-autoform-core",
   "version": "1.0.0",
   "description": "create forms out of metadata",
-  "main": "index.js",
+  "main": "/dist/index.js",
   "scripts": {
+    "clean": "rimraf ./dist",
+    "compile": "babel ./src -d ./dist",
+    "build": "yarn run clean && yarn run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Redux Autoform",
@@ -19,7 +22,8 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "rimraf": "^2.6.1"
   },
   "dependencies": {
     "prop-types": "^15.5.8",
