@@ -50,15 +50,14 @@ export default class AutoForm extends Component {
         const { form, onSubmit, handleSubmit, buttonBar, submitting, layout, componentFactory } = this.props;
 
         return (
-            <Form
-                form={form}
-                onSubmit={handleSubmit(onSubmit)}
-            >
+            <Form form={form} onSubmit={handleSubmit(onSubmit)}>
                 {this.renderLayout(componentFactory, layout)}
-                {React.createElement(buttonBar, { submitting })}
+                {this.renderButtonBar(buttonBar, submitting)}
             </Form>
         )
     }
+
+    renderButtonBar = (buttonBar, submitting) => React.createElement(buttonBar, { submitting });
 
     renderLayout = (componentFactory, layout) => {
         const formLayout = LayoutProvider.canonizeLayout(layout);
