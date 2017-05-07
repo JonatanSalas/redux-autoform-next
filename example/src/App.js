@@ -11,7 +11,7 @@ import store from './redux/store';
 import componentFactory from './util/factory';
 import exampleLayout from './schema/exampleLayout';
 
-import { AutoForm } from '../../packages/redux-autoform-core';
+import { AutoForm } from '../../packages/redux-autoform-core/dist';
 
 injectEventTapPlugin();
 
