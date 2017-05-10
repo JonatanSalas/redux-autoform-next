@@ -1,0 +1,30 @@
+{
+  "name": "redux-autoform-native",
+  "version": "1.0.0",
+  "description": "react-native components for redux-autoform",
+  "main": "/dist/index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "compile": "babel ./src -d ./dist",
+    "build": "yarn run clean && yarn run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Redux Autoform",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "react": "^15.5.4",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "react-native": "^0.44.0"
+  }
+}

@@ -36,7 +36,7 @@ class AutoForm extends Component {
     componentWillMount() {
         // we need to delete all undefined reduxFormProps specifically because overwriteOnInitialValuesChange cannot
         // be undefined, otherwise it triggers this errors:
-        //  Failed prop type: Required prop `overwriteOnInitialValuesChange` was not specified in `ReduxForm(AutoFormInternal)`.
+        //  Failed prop type: Required prop `overwriteOnInitialValuesChange` was not specified in `ReduxForm(AutoForm)`.
         Object.keys(this.props).forEach(key => {
             const property = this.props[key];
 
@@ -57,7 +57,7 @@ class AutoForm extends Component {
         )
     }
 
-    renderButtonBar = (buttonBar, submitting) => React.createElement(buttonBar, { submitting });
+    renderButtonBar = (buttonBar, submitting = false) => buttonBar && React.createElement(buttonBar, { submitting });
 
     renderLayout = (componentFactory, layout) => {
         const formLayout = LayoutProvider.canonizeLayout(layout);
